@@ -1,0 +1,796 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.page0 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./first.webp);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 0;
+    color: #F3EDE0;
+}
+
+.logo {
+    position: absolute;
+    width: 6vw;
+    top: 4vh;
+    left: 4vw;
+}
+
+
+.machiene {
+    overflow: hidden;
+    position: absolute;
+    top: 23vh !important;
+    right: -4vw !important;
+}
+
+.motion {
+    color: #F3EDE0;
+    position: absolute;
+    top: 90vh;
+    right: 0vh;
+    width: 100%;
+    height: 8vh;
+    background-color: navy;
+}
+
+.motion ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 8vh;
+    width: 100%;
+}
+
+.motion li {
+    width: 100%;
+    font-size: larger;
+    color: #F3EDE0;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    font-family: "Roboto", sans-serif;;
+    list-style: none;
+    font-weight: 700;
+    animation: scroll-left-to-right 8s linear infinite;
+}
+
+@keyframes scroll-left-to-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+
+.page0 h1 {
+    margin-bottom: 3vh;
+    z-index: 100;
+    font-size: 4vw;
+    font-family: "Momo Trust Display", sans-serif;
+    color: #F3EDE0 ;
+    font-weight: 700;
+}
+
+.orange {
+    font-size: 3vw;
+    margin-bottom: 3vh;
+    color: #F3EDE0;
+    font-family: "Momo Trust Display", sans-serif;
+    z-index: 100;
+}
+
+
+.first {
+    margin-top: 2vh;
+    font-size: larger;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+
+
+.page1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./back.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.grid {
+    padding-top: 7vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90vw;
+    height: 60vh;
+    gap: 5vw;
+}
+
+.promo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(242, 250, 225);
+    font-family: "Roboto", sans-serif;;
+    font-size: 4vw !important;
+    margin-bottom: 5vh;
+}
+
+
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.about h3 {
+    color: rgb(242, 250, 225);
+    font-family:"Zalando Sans", sans-serif;;
+    font-size: 2vw;
+    margin-bottom: 3vh;
+}
+
+.about p {
+    margin-bottom: 1vh;
+    color: rgb(242, 250, 225);
+    font-family: "Zalando Sans", sans-serif;
+}
+
+
+.services {
+   display: flex;
+   flex-direction: column;
+}
+
+.services h3 {
+    color:rgb(242, 250, 225);
+    font-family: "Zalando Sans", sans-serif;
+    font-size: 2vw;
+    margin-bottom: 3vh;
+}
+
+.services ul {
+    margin-left: 1vw;
+}
+
+.services li {
+    margin-bottom: 1vh;
+    color: rgb(242, 250, 225);
+    font-family: "Zalando Sans", sans-serif;
+    list-style: none;
+}
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact h3 {
+    color: rgb(242, 250, 225);
+    font-family: "Zalando Sans", sans-serif;
+    font-size: 2vw;
+    margin-bottom: 3vh;
+}
+
+
+.contact ul {
+    color: rgb(242, 250, 225);
+    font-family: "Zalando Sans", sans-serif;
+    margin-left: 1vw;
+}
+
+.contact li {
+    margin-bottom: 1vh;
+    color: rgb(242, 250, 225);
+    font-family: "Zalando Sans", sans-serif;
+    list-style: none;
+}
+
+
+.dg {
+    width: 35vw;
+    height: 20vw;
+    position: absolute;
+    top: 52vh;
+    right: 10vw;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.page2 {
+   width: 100%;
+   height: 100vh;
+   background-image: url(./third.webp);
+   background-size: cover;
+   background-repeat: no-repeat;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+.generatorimg {
+    width: 50%;
+    height: 55vh;
+    border-radius: 20px;
+}
+
+
+@media (min-width : 320px) and (max-width : 375px) {
+
+    .page0 {
+        align-items: flex-start;
+    }
+
+    .logo{
+        width: 10vw;
+    }
+
+    .page0 h1 {
+        padding-left: 7vw;
+        padding-right: 3vw;
+        font-size: 6vw;
+    }
+
+    .first {
+        padding-left: 7vw;
+        padding-right: 3vw;
+        font-size: small;
+    }
+
+    .machiene {
+        width: 50vw !important;
+        height: 30vw !important;
+        top: 36vh !important;
+        right: -4vw !important;
+    }
+
+    .motion {
+        width: 179%;
+    }
+
+    .motion li {
+        width: 115%;
+        font-size: small !important;
+        margin-right: 6vw;
+        margin-left: 8vw;
+    }
+
+    .motion li .four {
+        display: none;
+    }
+
+    .motion li .five {
+        display: none;
+    }
+
+    .promo {
+        font-size: 7vw !important;
+        margin-bottom: 2vh;
+    }
+
+    .gene {
+        display: none;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        padding-top: 6vh;
+        width: 90vw;
+        height: 83vh;
+        gap: 5vw;
+    }
+
+    .about h3 {
+        font-size: 5vw;
+        margin-bottom: 3vh;
+    }
+
+    .about p {
+        font-size: small;
+    }
+
+    .about p .none {
+        display: none !important;
+    }
+
+    .services h3 {
+        font-size: 4vw;
+        margin-bottom: 3vh;
+    }
+
+    .services li {
+        font-size: small;
+    }
+
+    .contact h3 {
+        font-size: 4vw;
+        margin-bottom: 3vh;
+    }
+
+    .contact li {
+        font-size: medium;
+    }
+
+    .generatorimg {
+        width: 88%;
+        height: 25vh;
+       
+    }
+
+
+
+}
+
+
+@media (min-width : 375px) and (max-width : 425px) {
+
+    .page0 {
+        padding-left: 7vw;
+        padding-right: 3vw;
+        align-items: flex-start;
+    }
+
+    .logo {
+        width: 10vw;
+    }
+
+    .page0 h1 {
+        font-size: 6vw;
+    }
+
+    .orange {
+        font-size: 6vw;
+    }
+
+    .first {
+        font-size: medium;
+    }
+
+    .machiene {
+        top: 34vh !important;
+        right: -4vw !important;
+    }
+
+    .dg {
+        width: 50vw;
+        height: 29vw;
+    }
+
+
+    .motion li {
+        width: 100%;
+        font-size: small;
+        margin-right: 3vw;
+        margin-left: 5vw;
+    }
+
+    .four {
+        display: none;
+    }
+
+    .five {
+        display: none;
+    }
+
+
+    .promo {
+        font-size: 7vw !important;
+    }
+
+    .gene {
+        display: none;
+    }
+
+    .grid {
+        height: 80vh;
+        grid-template-columns: repeat(1, 1fr);
+        padding-top: 4vh;
+    }
+
+    .about h3 {
+        font-size: 5.5vw;
+    }
+
+
+    .about p {
+        font-size: small;
+    }
+
+    .about p .none {
+        font-size: small;
+    }
+
+    .services h3 {
+        font-size: 5.5vw;
+    }
+
+    .services li {
+        font-size: small;
+    }
+
+    .contact h3 {
+        font-size: 5.5vw;
+    }
+
+    .contact li {
+        font-size: small;
+    }
+
+    .generatorimg {
+        width: 92%;
+        height: 32vh;
+    }
+}
+
+
+@media (min-width: 425px) and (max-width : 550px) {
+
+    .page0 {
+        padding-left: 7vw;
+        padding-right: 3vw;
+        align-items: flex-start;
+    }
+
+    .logo{
+        width: 10vw;
+    }
+
+    .page0 h1 {
+        font-size: 5vw;
+    }
+
+    .orange {
+        font-size: 5vw;
+    }
+
+    .first {
+        font-size: medium;
+    }
+
+    .dg {
+        width: 47vw;
+        height: 26vw;
+    }
+
+    .machiene {
+        top: 34vh !important;
+        right: -2vw !important;
+    }
+
+    .motion li {
+        font-size: small;
+    }
+
+    .motion {
+        top: 90vh;
+        right: 0vh;
+        width: 145%;
+    }
+
+    .four {
+        display: none;
+    }
+
+    .five {
+        display: none;
+    }
+
+
+    .gene {
+        display: none;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        height: 80vh;
+    }
+
+    .about h3 {
+        font-size: 5vw;
+    }
+
+    .none {
+        font-size: small;
+    }
+
+    .about p {
+        font-size: small;
+    }
+
+    .services h3 {
+        font-size: 5vw;
+    }
+
+    .services li {
+        font-size: small;
+    }
+
+    .contact h3 {
+        font-size: 5vw;
+    }
+
+    .contact li {
+        font-size: medium;
+    }
+
+    .generatorimg {
+        width: 88%;
+        height: 40vh;
+    }
+
+
+}
+
+@media (min-width :550px) and (max-width : 768px) {
+
+
+    .page0 h1 {
+        font-size: 5vw;
+    }
+
+    .logo {
+        width: 10vw;
+    }
+
+    .orange {
+        font-size: 5vw;
+    }
+
+    .first {
+        margin-left: 3VW;
+        margin-right: 3vw;
+        font-size: large;
+    }
+
+    .machiene {
+        width: 40vw !important;
+        height: 22vw !important;
+        top: 33vh !important;
+        right: -9vw !important;
+    }
+
+    .motion li {
+        font-size: small;
+    }
+
+    .dg {
+       width: 62vw;
+       height: 41vw;
+       top: 50vh;
+       right: 1vw;
+    }
+
+    .promo {
+        font-size: 5vw !important;
+    }
+
+    .grid {
+        height: 80vh;
+        width: 90vw;
+    }
+
+    .about h3 {
+        font-size: 4vw;
+    }
+
+
+    .about p {
+        font-size: small;
+    }
+
+
+    .none {
+        font-size: small;
+    }
+
+    .services h3 {
+        font-size: 4vw;
+    }
+
+    .services li {
+        font-size: small;
+    }
+
+    .contact h3 {
+        font-size: 4vw;
+    }
+
+    .contact li {
+        font-size: small;
+    }
+
+    .generatorimg {
+        width: 91%;
+        height: 47vh;
+    }
+
+    
+
+}
+
+@media (min-width : 768px ) and (max-width : 850px) {
+
+    .machiene {
+        top: 33vh !important;
+        right: -4vw !important;
+        width: 35vw !important;
+        height: 20vw !important;
+    }
+
+    .first {
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+
+    .motion {
+        width: 127%;
+    }
+
+    .dg {
+        top: 52vh;
+        right: -6vw;
+        width: 63vw;
+        height: 39vw;
+    }
+
+    .promo {
+        font-size: 5vw !important;
+    }
+
+    .about h3 {
+        font-size: 3vw;
+    }
+
+    .about p {
+        font-size: small;
+    }
+
+    .none {
+        font-size: small;
+    }
+
+    .services h3 {
+        font-size: 3vw;
+    }
+
+    .services li {
+        font-size: small;
+    }
+
+    .contact h3 {
+        font-size: 3vw;
+    }
+
+    .contact li {
+        font-size: small;
+    }
+
+    .generatorimg {
+        width: 80%;
+        height: 51vh;
+    }
+
+
+}
+
+@media (min-width :850px) and (max-width :1024px) {
+
+
+    .machiene {
+        width: 35vw !important;
+        height: 20vw !important;
+        top: 32vh !important;
+    }
+
+    .first {
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+
+    .motion {
+        width: 146%;
+    }
+
+    .dg {
+        top: 48vh;
+        right: -4vw;
+        width: 58vw;
+        height: 35vw;
+    }
+
+    .generatorimg {
+        width: 87%;
+    }
+
+}
+
+@media (min-width :1024px) and (max-width : 1250px) {
+
+
+    .machiene {
+        right: -2vw !important;
+        top: 33vh !important;
+        width: 35vw !important;
+        height: 20vw !important;
+    }
+
+    .motion {
+        width: 130%;
+    }
+
+    .first {
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+
+    .dg {
+        top: 46vh;
+        right: 0vw;
+        width: 51vw;
+        height: 33vw;
+    }
+
+    .generatorimg {
+        width: 82%;
+    }
+
+
+}
+
+@media (min-width :1250px) and (max-width :1440px) {
+
+    .machiene {
+        top: 35vh !important;
+        width: 35vw !important;
+        height: 20vw !important;
+    }
+
+    .motion {
+        width: 115%;
+    }
+
+    .dg {
+        width: 53vw;
+        height: 33vw;
+        top: 48vh;
+        right: 1vw;
+    }
+
+
+    .generatorimg {
+        width: 95%;
+    }
+
+
+}
+
+
+
